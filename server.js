@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 // Import express-session
-const session = require('express-session');
+const session = require('cookie-session');
 const expressHandlebars = require('express-handlebars');
 
 const routes = require('./controllers');
