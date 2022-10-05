@@ -20,7 +20,7 @@ const sess = {
 
 app.use(session(sess));
 
-const handlebars = expressHandlebars.create({ helpers });
+const handlebars = expressHandlebars.create();
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');

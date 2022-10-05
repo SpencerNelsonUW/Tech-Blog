@@ -23,9 +23,13 @@ blogpost.init(
             type: DataTypes.STRING,
             allowNull:false,
         },
-        creator: {
+        user_id: {
             type:DataTypes.STRING,
             allowNull:false,
+            references: {
+                mode:'user',
+                key:'id',
+            },
         },
     },
     {
