@@ -23,14 +23,6 @@ blogpost.init(
             type: DataTypes.STRING,
             allowNull:false,
         },
-        user_id: {
-            type:DataTypes.STRING,
-            allowNull:false,
-            references: {
-                mode:'user',
-                key:'id',
-            },
-        },
     },
     {
         sequelize,
