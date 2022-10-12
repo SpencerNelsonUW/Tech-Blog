@@ -3,20 +3,28 @@ const router = require('express').Router();
 
 //Route for my home page, this is where posts will be shown
 router.get('/', (req, res) => {
-    try {
-        res.render('home')
-    } catch (err) {
-        console.log(err);
-    }
+    if (!req.session.loggedIn) {
+        res.redirect('/login');
+        return;
+      } else {
+            try {
+                res.render('home')
+            } catch (err) {
+                console.log(err);
+            }}
 });
 
 //route for the dashboard, AKA where new posts are made
 router.get('/dashboard', (req, res) => {
-    try {
+    if (!req.session.loggedIn) {
+        res.redirect('/login');
+        return;
+    } else {
+        try {
         res.render('dashboard')
-    } catch (err) {
-        console.log(err);
-    }
+        } catch (err) {
+            console.log(err);
+        }}
 });
 
 //login to be able to view the posts and make new posts
@@ -41,4 +49,4 @@ router.get('/signup', (req, res) => {
 
 
 
-module.exports = router;
+module.exports = router;                            
