@@ -1,12 +1,12 @@
-let createNewBlogpostClicked = false;
+let startNewBlogpostClicked = false;
 
-function createBlogpost(){
-    createNewBlogpostClicked = true;
-    console.log(createNewBlogpostClicked)
+function startBlogpost(){
+    startNewBlogpostClicked = true;
+    console.log(startNewBlogpostClicked)
     return;
 }
 
-document.querySelector('#newBlogpost').addEventListener('click', createBlogpost);
+document.querySelector('#startNewBlogpost').addEventListener('click', startBlogpost);
 
 
 
