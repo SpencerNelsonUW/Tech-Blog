@@ -1,12 +1,12 @@
-let startNewBlogpostClicked = false;
+let startNewBlogpostClicked = true;
 
 function startBlogpost(){
-    startNewBlogpostClicked = true;
+    startNewBlogPostClicked = !startNewBlogpostClicked;
     console.log(startNewBlogpostClicked)
-    return;
+    return startNewBlogpostClicked;
 }
 
-document.querySelector('#startNewBlogpost').addEventListener('click', startBlogpost);
+document.querySelector('.startNewBlogpost').addEventListener('click', startBlogpost);
 
 
 
