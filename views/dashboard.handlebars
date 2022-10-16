@@ -1,13 +1,12 @@
-<div> hi
-{{#if startNewBlogpostClicked}} //why isnt this showing up?
-    <div>
+<div>
+    <div class="blogpost-form invisible">
         {{>blogpost-form}}
     </div>
-{{else}}
-    <div>
+
+    <div class="startNewBlogpost">
         {{>startNewBlogpost-button}}
     </div>
-{{/if}}
+
 </div>
 
 <script src="./js/blogpost.js"></script>
