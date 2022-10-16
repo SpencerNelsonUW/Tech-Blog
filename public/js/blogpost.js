@@ -30,7 +30,7 @@ if(blogpost){
     submitPost.addEventListener('click', postBlogpost);
 
     if (title && body) {
-      const response = await fetch('/api/blogposts', {
+      const response = await fetch('/api/blogpost', {
         method: 'POST',
         body: JSON.stringify({ title, body }),
         headers: { 'Content-Type': 'application/json' },
