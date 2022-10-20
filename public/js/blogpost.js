@@ -1,6 +1,8 @@
 var blogpost = document.querySelector('.blogpost-form')
 var startNewBlogpost = document.querySelector('.startNewBlogpost')
 
+var dashboard = document.querySelector('.dashboard')
+
 var startNewBlogpostClicked = true;
 
 function startBlogpost(){
@@ -52,4 +54,11 @@ if(blogpost){
 
 
 
+if (dashboard){
+  dashboard.addEventListener('click', populateDashboard);
+}
+
+function populateDashboard(){
+  
+}
   

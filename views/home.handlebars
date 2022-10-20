@@ -1,5 +1,6 @@
-<div>
-    <form>
-        {{> blogposts}}
-    </form>
-</div>
+{{#each postData as |Blogpost|}}
+    {{> blogposts Blogpost}} 
+{{/each}}
+
+
+

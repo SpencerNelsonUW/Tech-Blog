@@ -66,6 +66,20 @@ router.post('/logout', (req, res) => {
 });
 
 
+router.get("/", async (req, res) => {
+
+    try {
+      // Search the database for all blogposts
+      const userData = await User.findAll();
+      // We use .get({ plain: true }) on the object to serialize it so that it only includes the data that we need.
+      // Then, the 'home' template is rendered and Blogpost is passed into the template.
+      res.json(userData);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+});
+
+
 
 
 module.exports = router;
