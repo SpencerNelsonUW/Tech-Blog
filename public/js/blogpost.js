@@ -18,7 +18,7 @@ if (startNewBlogpost){
 
 
 if(blogpost){
- 
+  
     const postBlogpost = async (event) => {
     event.preventDefault();
      
@@ -48,17 +48,3 @@ if(blogpost){
     }
   };
 };
-
-
-
-
-
-
-if (dashboard){
-  dashboard.addEventListener('click', populateDashboard);
-}
-
-function populateDashboard(){
-  
-}
-  
