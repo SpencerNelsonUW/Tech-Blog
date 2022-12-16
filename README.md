@@ -10,6 +10,7 @@
   - [Description](#description)
   - [Deployed](#deployed)
   - [Installation](#installation)
+  - [Video](#video)
   - [Screenshots](#screenshots)
   - [Usage](#usage)
   - [License](#license)
@@ -19,6 +20,8 @@
 
   ## Installation
   clone the repo and open it in VS Code.
+  
+  ## Video - https://drive.google.com/file/d/1bCvuUGXuVa81h4vr1O6isQaF_9AKZjfS/view
   
   ## Screenshots
   ![image](https://user-images.githubusercontent.com/107777027/207462653-7ec9a3ab-67b5-4d1e-bf1a-68248477bcee.png)
